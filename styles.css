@@ -1,0 +1,392 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Asegurar que el cuerpo ocupe al menos el 100% de la altura */
+    margin: 0;
+    padding: 0;
+    display: inline-flexbox;
+    flex-direction: row;
+    background: #908c8c;
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(88, 90, 95);
+    font-family: Arial, sans-serif;
+    font-size: smaller;
+    color: black;
+    display: inline-block;
+    flex-flow: row wrap;
+}
+
+
+
+p{
+    padding: 10px 0 ;
+    font-size: medium;
+}
+
+nav h1{
+    justify-content: center;
+    display: inline-block;
+}
+
+.imglogo img{
+    height: 100px;
+    width: 100px;
+    display: inline-flex;
+    border-radius: 50%;
+}
+
+#h1 {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: rgb(191, 143, 23);
+}
+
+.container{
+    margin: auto;
+    max-width: 1100;
+    overflow: hidden;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.navbar{
+    background: black;
+}
+
+.navbar ul{
+    list-style-type: none;
+}
+
+.navbar li{ 
+    float: left;
+}
+
+.navbar ul li a{ 
+    color: white;
+    text-decoration: none;
+    padding: 70px;
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+}    
+    
+.navbar li a:hover, 
+.navbar li a.current {
+    color: black;
+    background: white;
+}
+
+/* PRIMERA PESTAÑA */
+
+#fotocama{
+    background: url(images/Hall1.jpg) center no-repeat;
+    background-size: cover;
+    height: 350px;
+    align-self: center;
+}
+
+.titulo{
+    font-size: 40px;
+    text-align: center;
+}
+
+.sopa{
+    color: rgba(226, 109, 7, 0.868);
+}
+
+.colortexto{
+    color: rgb(249, 249, 249);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 4% ;
+    align-content: center;
+}
+
+section article #eslogan{
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(153, 130, 100);
+    padding: 10% 15% 15;
+}
+
+article #eslogan{
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+#eslogan{
+    font-size: 45px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    color: rgba(0, 5, 9, 0.887);
+    overflow: hidden;
+}
+
+#comedor{
+    background: url(images/Comedor.jpg) center;
+    min-height: 24%;
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.fruta{
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.fruta div h3{
+    font-size: 20px;
+    color: rgb(230, 191, 141);
+}
+
+.divaside {
+    width: 100%;
+    height: 500px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    flex-wrap: wrap;
+    text-align: center;
+    overflow: hidden;
+    padding: 70px 30px;
+    margin-left: 10px;
+}
+
+aside div:hover{
+    transform: scale(1.1);
+    font-size: 17px;
+    justify-content: center;
+} 
+
+aside #gastronomia{
+    background: url(images/Comida.jpg) center;
+    background-size: cover ;
+    width: 405px;
+}
+
+aside #piscina{
+    background: url(images/Piscina.jpg) center;
+    background-size: cover;
+    width: 405px;
+}
+
+aside #gimnasio{
+    background: url(images/Gym.jpg) center;
+    background-size: cover;
+    width: 405px;
+}
+
+
+/* Habitaciones */
+
+
+#divgrid {
+    background: #504d4d;
+    display: grid;
+    grid-template-columns: 15fr 2fr; 
+    grid-template-rows: 12fr;
+    grid-template-areas: 
+    "main aside"
+    ;
+}
+
+#mainh {
+    width: 100%;
+    grid-area: main ;
+}
+
+#videoh {
+    margin: 20px;
+    width: 84%;
+}
+
+main .habitimg{
+    justify-content: space-around;
+    margin: 20px;
+    align-content: center;
+}
+
+.habitimg {
+display: inline-flex;
+
+min-width: 40%;
+height: 15rem;
+width: 10rem;
+}
+
+.habitimg:hover{
+
+}
+
+.asiderooms {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    grid-area: aside; 
+}
+
+
+
+/* Amenities */
+
+#maina {
+    margin: 20px;
+    
+
+}
+
+.slider-container {
+    padding: 50px;
+    width: 80%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+
+
+
+/* FORMULARIO */
+
+#form1 {
+    width: 100%;
+    height: 100%;
+    margin: 40%;
+}
+
+#form{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(232, 155, 13, 0.71);
+    height: 800px;
+    width: 500px;
+    justify-content: space-between;
+    font-size:x-large;
+    border-radius: 8%;
+}
+
+#form fieldset{
+    height: 550px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form label {
+    height: 3%;
+    font-size: x-large;
+    justify-content: space-around;
+
+}
+
+#form label input{
+    width: 300;
+
+}
+
+button{
+    margin-top: 20px;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    border: 10px;
+    border-radius: 15%;
+    position: relative;
+    float: left;
+    justify-content: space-around;
+}
+
+button:hover {
+    background: black;
+    color: orange;
+    transition: all 0.5s ease; } /* Añadiendo transición suave */
+
+
+/*SOBRE NOSOTROS*/
+
+
+.styled{
+    margin:20PX;
+    padding: 1em;
+    border: 2px dotted rgb(215, 108, 70);
+    border-radius: 5px;
+    background: rgb(162, 157, 157);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.8s ease-in-out;
+
+}
+
+details .styled summary{
+    outline: auto;
+    cursor: pointer;
+}
+
+details[open].styled {
+    background-color: #928888;
+}
+
+details[open].styled summary{
+padding: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background: rgb(49, 48, 48);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Asegurar que el footer ocupe todo el ancho de la página */
+}
+
+.clr{
+    clear: both;
+}
+
+footer a {
+    text-decoration: none;
+    color: aliceblue; /* Asegurar que los enlaces tengan el color deseado */
+}
+
+footer div {
+    display: flex; /* Usar Flexbox para alinear iconos horizontalmente */
+    gap: 10px; /* Añadir espacio entre los iconos */
+}
+
+footer #facebook,
+footer #instagram,
+footer #twitter {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(228, 223, 209); /* Esto es solo para mostrar el espacio del icono; deberías usar imágenes o iconos reales */
+    border-radius: 50%; /* Hacer los iconos circulares */
+    display: inline-block;
+    overflow: hidden;
+}
+
+footer #facebook:hover,
+footer #instagram:hover,
+footer #twitter:hover {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(240, 183, 79, 0.583);
+}
