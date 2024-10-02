@@ -2,6 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../styles.css">
     <title>Habitaciones</title>
 </head>
@@ -25,86 +26,209 @@
         </nav>
     </header>
 
-
     <h2> Imágenes de las habitaciones </h2>
 
-<div id="divgrid">
+    <div id="idh">
 
-    <aside class="asiderooms">
+    <main id="mainh">
 
-        <h2>Formulario</h2>
-    
-        <form>
-            <fieldset>
-    
-        <label for="inombre">Nombre:</label>
-        <input type="text" id="inombre" name="name" placeholder="Nombre" class="form-group" autofocus required>
-        
-    
-        <label for="">Apellido:</label>
-        <input type="text" name="surname" placeholder="Apellido"  required>
-    
-        <label for="">Edad:</label>
-        <input type="number" name="name" placeholder="Edad" required>
-    
-        <label for="">Nacionalidad</label>
-        <input type="text" name="name" placeholder="Nombre" required>
-    
-        <label>Sexo:</label>
-        
-        <label for="fem">Femenino</label>
-        <input type="radio" name="sexo" id="fem" value="Femenino">
-    
-        <br>    
-    
-        <label for="masc">Masculino</label>        
-        <input type="radio" name="sexo" id="masc" value="Masculino">
-    
-        <label for="">Email:</label>
-        <input type="email" name="Email" placeholder="Nombre" required>
-    
-        <label for="iphone">Teléfono:</label>
-        <input type="tel" name="phone" placeholder="Teléfono" required id="iphone">
-    
-        <label for="">Realice una breve descripción de su persona:</label>
-        <textarea required placeholder="Quiero conocer Buenos Aires porque..."></textarea>
-    
-    </fieldset>
-    
-        <button type="submit">Enviar</button>
-        <button type="reset">Limpiar</button>
-    
-    </form>
-    
-    </aside>
-    
-
-<main id="mainh">
-
-    <video id="videoh" src="../videos/Hotel.mp4" controls>Video de las Habitaciones</video>
-
-<img  class="habitimg"  src="../images/Hoteles1.jpg" alt="Imagen de habitación de Hotel">
-<img  class="habitimg"  src="../images/Hoteles2.jpg" alt="Imagen de habitación de Hotel">
-<img  class="habitimg"  src="../images/Hoteles3.jpg" alt="Imagen de habitación de Hotel">
-<img  class="habitimg"  src="../images/Hoteles4.jpg" alt="Imagen de habitación de Hotel">
-<img  class="habitimg"  src="../images/Hoteles5.jpg" alt="Imagen de habitación de Hotel">
-<img  class="habitimg"  src="../images/Hoteles6.jpg" alt="Imagen de habitación de Hotel">
-<img  class="habitimg"  src="../images/Hoteles7.jpg" alt="Imagen de habitación de Hotel">
-<img  class="habitimg"  src="../images/Hoteles8.jpg" alt="Imagen de habitación de Hotel">
-<img  class="habitimg"  src="../images/Hoteles9.jpg" alt="Imagen de habitación de Hotel">
-<img  class="habitimg"  src="../images/Hotel10.jpg" alt="Imagen de habitación de Hotel">
-<img  class="habitimg"  src="../images/Hotel11.jpg" alt="Imagen de habitación de Hotel">
-<img  class="habitimg"  src="../images/Hotel12.jpg" alt="Imagen de habitación de Hotel">
-<img  class="habitimg"  src="../images/Hotel13.jpg" alt="Imagen de habitación de Hotel">
-<img  class="habitimg"  src="../images/Hotel14.jpg" alt="Imagen de habitación de Hotel">
-<img  class="habitimg"  src="../images/Hotel15.jpg" alt="Imagen de habitación de Hotel">
-<img  class="habitimg"  src="../images/Hotel16.jpg" alt="Imagen de habitación de Hotel">
-
-
+    <div class="card" style="width: 20rem;" class="habiting">
+        <img src="../images/Hoteles1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><b>Habitación Estándar:</b></h5>
+        <p class="card-text">Acogedora habitación con cama doble, aire acondicionado, TV y Wi-Fi gratuito. Ideal para estancias cortas.</p>
+        <a href="#" class="btn btn-primary">+ INFO</a>
+        </div>
+    </div>
+<div class="card" style="width: 20rem;" class="habiting">
+        <img src="../images/Hoteles3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><b>Habitación Doble:</b></h5>
+        <p class="card-text">Espacio amplio con dos camas individuales, minibar y baño privado. Perfecta para compartir con amigos o familia.</p>
+        <a href="#" class="btn btn-primary">+ INFO</a>
+        </div>
+    </div>
+<div class="card" style="width: 20rem;" class="habiting">
+        <img src="../images/Hoteles4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><b>Suite Junior:</b></h5>
+        <p class="card-text">Lujosa suite con sala de estar, cama king-size y vistas panorámicas. Incluye bañera de hidromasaje y escritorio.</p>
+        <a href="#" class="btn btn-primary">+ INFO</a>
+        </div>
+    </div>
+<div class="card" style="width: 20rem;" class="habiting">
+        <img src="../images/Hoteles5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><b>Habitación Familiar:</b></h5>
+        <p class="card-text">Habitación espaciosa con cama doble y literas, diseñada para familias. Cuenta con zona de estar y Wi-Fi.</p>
+        <a href="#" class="btn btn-primary">+ INFO</a>
+        </div>
+    </div>
+<div class="card" style="width: 20rem;" class="habiting">
+        <img src="../images/Hoteles6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><b>Suite Ejecutiva:</b></h5>
+        <p class="card-text">Elegante suite con áreas de trabajo y descanso separadas. Incluye servicios exclusivos y acceso al lounge.</p>
+        <a href="#" class="btn btn-primary">+ INFO</a>
+        </div>
+    </div>
+<div class="card" style="width: 20rem;" class="habiting">
+        <img src="../images/Hoteles7.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><b>Habitación Deluxe:</b></h5>
+        <p class="card-text">Estilo moderno con cama king-size, sofá y balcón privado. Ideal para quienes buscan confort adicional.</p>
+        <a href="#" class="btn btn-primary">+ INFO</a>
+        </div>
+    </div>
+<div class="card" style="width: 20rem;" class="habiting">
+        <img src="../images/hoteles8.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><b>Suite Presidencial:</b></h5>
+        <p class="card-text">Máximo lujo con dos dormitorios, salón privado, comedor y jacuzzi. Servicios exclusivos y vistas espectaculares.</p>
+        <a href="#" class="btn btn-primary">+ INFO</a>
+        </div>
+    </div>
+<div class="card" style="width: 20rem;" class="habiting">
+        <img src="../images/hoteles9.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><b>Habitación Superior:</b></h5>
+        <p class="card-text">Habitación moderna con cama queen-size, baño con ducha de lluvia y escritorio. Ideal para ejecutivos.</p>
+        <a href="#" class="btn btn-primary">+ INFO</a>
+        </div>
+    </div>
+<div class="card" style="width: 20rem;" class="habiting">
+        <img src="../images/Hotel10.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><b>Habitación Premium:</b></h5>
+        <p class="card-text">Amplia y luminosa, con cama king-size, sofá y baño privado con bañera. Perfecta para relajarse.</p>
+        <a href="#" class="btn btn-primary">+ INFO</a>
+        </div>
+    </div>
+<div class="card" style="width: 20rem;" class="habiting">
+        <img src="../images/Hotel11.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><b>Habitación Triple:</b></h5>
+        <p class="card-text">Con tres camas individuales, ideal para grupos. Ofrece minibar, aire acondicionado y TV de pantalla plana.</p>
+        <a href="#" class="btn btn-primary">+ INFO</a>
+        </div>
+    </div>
+<div class="card" style="width: 20rem;" class="habiting">
+        <img src="../images/Hotel12.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><b>Loft:</b></h5>
+        <p class="card-text">Estilo urbano con dos niveles, cama king-size y cocina americana. Espacio moderno y funcional para estancias prolongadas.</p>
+        <a href="#" class="btn btn-primary">+ INFO</a>
+        </div>
+    </div>    
+<div class="card" style="width: 20rem;" class="habiting">
+        <img src="../images/hotel13.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><b>Habitación Adaptada:</b></h5>
+        <p class="card-text">Diseñada para personas con movilidad reducida, incluye acceso adaptado, cama doble y baño espacioso.</p>
+        <a href="#" class="btn btn-primary">+ INFO</a>
+        </div>
+    </div>
+<div class="card" style="width: 20rem;" class="habiting">
+        <img src="../images/hotel14.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><b>Bungalow: </b></h5>
+        <p class="card-text">Espacio independiente rodeado de jardines, con cama doble, terraza privada y mini cocina. Perfecto para una escapada tranquila.</p>
+        <a href="#" class="btn btn-primary">+ INFO</a>
+        </div>
+    </div>
+<div class="card" style="width: 20rem;" class="habiting">
+        <img src="../images/hotel15.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><b>Habitación Conectada:</b></h5>
+        <p class="card-text">Dos habitaciones interconectadas, cada una con su propio baño. Ideal para familias que buscan privacidad y comodidad.</p>
+        <a href="#" class="btn btn-primary">+ INFO</a>
+        </div>
+    </div>
 </main>
+<aside class="asiderooms">
 
+    <form id="formu">
+        <legend>Filtros:</legend>
+        <fieldset>
+
+    <label class="cate">Categoría:</label>
+    <br>
+    <label>Pareja</label>
+    <input type="radio"  name="tipo" id="pareja"><br>
+    <label>Trabajo Remoto</label>
+    <input type="radio"  name="tipo" id="pareja"><br>
+    <label>Familia</label>
+    <input type="radio" name="tipo" id="familia"><br>   
+<br>
+    <label class="cate">Características principales</label>
+    <label>Aire Acondicionado</label>
+    <input type="checkbox"  name="tipo" id="pareja"><br>
+    <label>Televisión</label>
+    <input type="checkbox"  name="tipo" id="pareja"><br>
+    <label>Microondas</label>
+    <input type="checkbox" name="tipo" id="familia"><br>
+    <label>Estufa</label>
+    <input type="checkbox"  name="tipo" id="pareja"><br>
+    <label>Balcón</label>
+    <input type="checkbox"  name="tipo" id="pareja"><br>
+    <label>Sauna</label>
+    <input type="checkbox"  name="tipo" id="pareja"><br>
+    <label>Lavavajillas</label>
+    <input type="checkbox"  name="tipo" id="pareja"><br>
+    <br>
+    <label class="cate">Vista:</label>
+    <br>
+    <label>A la playa</label>
+    <input type="radio" name="playa">
+    <br>    
+    <label>A la ciudad</label>        
+    <input type="radio" name="ciudad">
+    <br>
+    <label>Ambas</label>        
+    <input type="radio" name="ambas"><br>        
+    
+    <label>Distancias en metros</label>
+
+
+    <label>Supermercado</label><br>        
+    <input type="range" name="num" min="0" max="1000" class="ranges" value="0" onmousemove="rangeSlider(this.value)">
+    <span id="rangeValue">0</span><br>
+    <label>Cafetería</label> <br>       
+    <input type="range" name="num" min="0" max="1000" class="ranges" value="0" onmousemove="rangeSlider(this.value)">
+    <span id="rangeValue">0</span><br>
+    <label>Hospital</label> <br>       
+    <input type="range" name="num" min="0" max="1000" class="ranges" value="0" onmousemove="rangeSlider(this.value)">
+    <span id="rangeValue">0</span><br>
+    <label>Playa</label><br>        
+    <input type="range" name="num" min="0" max="1000" class="ranges" value="0" onmousemove="rangeSlider(this.value)">
+    <span id="rangeValue">0</span><br>
+    <label>Restaurante</label><br>        
+    <input type="range" name="num" min="0" max="1000" class="ranges" value="0" onmousemove="rangeSlider(this.value)">
+    <span id="rangeValue">0</span><br>
+    <label>Aeropuerto</label><br>        
+    <input type="range" name="num" min="0" max="1000" class="ranges" value="0" onmousemove="rangeSlider(this.value)">
+    <span id="rangeValue">0</span>
+
+    
+
+</fieldset>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpiar</button>
+
+</form>
+</aside>
+
+<script>
+    function rangeSlider(value){
+    document.getElementsById('rangeValue').innerHTML = value;
+    }
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
 
 </div>
+
 
 <footer>
     <h4>Seguinos en nuestras Redes Sociales</h4>

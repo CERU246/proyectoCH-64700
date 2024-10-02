@@ -194,60 +194,91 @@ aside #gimnasio{
 /* Habitaciones */
 
 
-#divgrid {
-    background: #504d4d;
-    display: grid;
-    grid-template-columns: 15fr 2fr; 
-    grid-template-rows: 12fr;
-    grid-template-areas: 
-    "main aside"
-    ;
+#mainh {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Distribuye las cards en columnas automáticas */
+    grid-gap: 1rem; /* Espacio entre las cards */
+    margin: 30px;  
+    padding: 40px; /* Añade padding para dar espacio interno */
 }
 
-#mainh {
-    width: 100%;
-    grid-area: main ;
+.habiting {
+    background-color: #fff; /* Opcional: color de fondo para las tarjetas */
+    border: 1px solid #ccc; /* Añade borde a las tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra */
+    padding: 15px; /* Espacio interno en las tarjetas */
 }
 
 #videoh {
-    margin: 20px;
-    width: 84%;
-}
-
-main .habitimg{
-    justify-content: space-around;
-    margin: 20px;
-    align-content: center;
-}
-
-.habitimg {
-display: inline-flex;
-
-min-width: 40%;
-height: 15rem;
-width: 10rem;
-}
-
-.habitimg:hover{
-
+    grid-area: video;
+    width: 100%;
 }
 
 .asiderooms {
+    grid-area: aside;
+}
+
+#idh {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Ajustar las columnas para un layout balanceado */
+    grid-template-areas:
+    "main aside"
+    "main aside";
+    grid-gap: 20px; /* Añade espacio entre las secciones */
+    background: #c0b1a1;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+#formu{
     display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    grid-area: aside; 
+    flex-flow: row wrap;
+    float: left;
+    align-items: center;
+    justify-content: space-around;
+    border: black double 2px;
+    border-radius: 10%;
+    padding: 10%;
+    margin: 10px;
+    background: #e07d43;
+    height: 1500px;
+    font-size: x-large;
 }
 
 
+.cate{
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.ranges{
+    width: 80%;
+    background: #e07d43;
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
+    border-radius: 5%;
+}
+
+#rangeValue{
+    position: relative;
+    text-align: center;
+    width: 80px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #3814c7;
+    margin-left: 10px;
+    border-radius: 20px;
+}
 
 /* Amenities */
 
 #maina {
     margin: 20px;
-    
-
 }
+
 
 .slider-container {
     padding: 50px;
@@ -296,7 +327,6 @@ width: 10rem;
 
 #form label input{
     width: 300;
-
 }
 
 button{
