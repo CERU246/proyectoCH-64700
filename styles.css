@@ -19,8 +19,6 @@ body {
     font-family: Arial, sans-serif;
     font-size: smaller;
     color: black;
-    display: inline-block;
-    flex-flow: row wrap;
 }
 
 
@@ -163,7 +161,8 @@ article #eslogan{
     text-align: center;
     overflow: hidden;
     padding: 70px 30px;
-    margin-left: 10px;
+    margin-left: 45px;
+    justify-content: space-around;
 }
 
 aside div:hover{
@@ -293,17 +292,19 @@ aside #gimnasio{
 
 /* FORMULARIO */
 
-#form1 {
-    width: 100%;
-    height: 100%;
-    margin: 40%;
+#mainr{
+    background-image: url(../images/hotelreservas.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;    
 }
 
 #form{
     margin: 20px;
     padding: 20px;
     background-color: rgba(232, 155, 13, 0.71);
-    height: 800px;
+    height: 700px;
     width: 500px;
     justify-content: space-between;
     font-size:x-large;
@@ -345,6 +346,19 @@ button:hover {
     background: black;
     color: orange;
     transition: all 0.5s ease; } /* Añadiendo transición suave */
+
+#sectionr{
+    position:static;
+    align-content: center;
+    justify-content: flex-start;
+    
+}
+
+.oli{
+    list-style: none;
+    display: grid; 
+    grid-template-columns: repeat(7, 1fr);
+}
 
 
 /*SOBRE NOSOTROS*/
