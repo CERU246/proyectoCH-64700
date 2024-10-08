@@ -86,7 +86,7 @@ nav h1{
 /* PRIMERA PESTAÑA */
 
 #fotocama{
-    background: url(images/Hall1.jpg) center no-repeat;
+    background: url(../images/Hall1.jpg) center no-repeat;
     background-size: cover;
     height: 350px;
     align-self: center;
@@ -133,7 +133,7 @@ article #eslogan{
 }
 
 #comedor{
-    background: url(images/Comedor.jpg) center;
+    background: url(../images/Comedor.jpg) center;
     min-height: 24%;
     height: 350px;
     width: 100%;
@@ -172,19 +172,19 @@ aside div:hover{
 } 
 
 aside #gastronomia{
-    background: url(images/Comida.jpg) center;
+    background: url(../images/Comida.jpg) center;
     background-size: cover ;
     width: 405px;
 }
 
 aside #piscina{
-    background: url(images/Piscina.jpg) center;
+    background: url(../images/Piscina.jpg) center;
     background-size: cover;
     width: 405px;
 }
 
 aside #gimnasio{
-    background: url(images/Gym.jpg) center;
+    background: url(../images/Gym.jpg) center;
     background-size: cover;
     width: 405px;
 }
