@@ -1,0 +1,46 @@
+/* FOOTER */
+
+footer {
+    background: rgb(49, 48, 48);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Asegurar que el footer ocupe todo el ancho de la página */
+}
+
+.clr{
+    clear: both;
+}
+
+footer a {
+    text-decoration: none;
+    color: aliceblue; /* Asegurar que los enlaces tengan el color deseado */
+}
+
+footer div {
+    display: flex; /* Usar Flexbox para alinear iconos horizontalmente */
+    gap: 10px; /* Añadir espacio entre los iconos */
+}
+
+footer #facebook,
+footer #instagram,
+footer #twitter {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(228, 223, 209); /* Esto es solo para mostrar el espacio del icono; deberías usar imágenes o iconos reales */
+    border-radius: 50%; /* Hacer los iconos circulares */
+    display: inline-block;
+    overflow: hidden;
+}
+
+footer #facebook:hover,
+footer #instagram:hover,
+footer #twitter:hover {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(240, 183, 79, 0.583);
+}

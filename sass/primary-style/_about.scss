@@ -1,0 +1,25 @@
+/*SOBRE NOSOTROS*/
+
+.styled{
+    margin:20PX;
+    padding: 1em;
+    border: 2px dotted rgb(215, 108, 70);
+    border-radius: 5px;
+    background: rgb(162, 157, 157);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.8s ease-in-out;
+
+}
+
+details .styled summary{
+    outline: auto;
+    cursor: pointer;
+}
+
+details[open].styled {
+    background-color: #928888;
+}
+
+details[open].styled summary{
+padding: 10px;
+}

@@ -1,0 +1,70 @@
+/* FORMULARIO */
+
+#mainr{
+    background-image: url(../images/hotelreservas.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;    
+}
+
+#form{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(232, 155, 13, 0.71);
+    height: 700px;
+    width: 500px;
+    justify-content: space-between;
+    font-size:x-large;
+    border-radius: 8%;
+}
+
+#form fieldset{
+    height: 550px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form label {
+    height: 3%;
+    font-size: x-large;
+    justify-content: space-around;
+
+}
+
+#form label input{
+    width: 300;
+}
+
+button{
+    margin-top: 20px;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    border: 10px;
+    border-radius: 15%;
+    position: relative;
+    float: left;
+    justify-content: space-around;
+}
+
+button:hover {
+    background: black;
+    color: orange;
+    transition: all 0.5s ease; } /* Añadiendo transición suave */
+
+#sectionr{
+    position:static;
+    align-content: center;
+    justify-content: flex-start;
+    
+}
+
+.oli{
+    list-style: none;
+    display: grid; 
+    grid-template-columns: repeat(7, 1fr);
+}
+

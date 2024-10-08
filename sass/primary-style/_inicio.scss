@@ -1,0 +1,131 @@
+/* PRIMERA PESTAÑA */
+
+nav h1{
+    justify-content: center;
+    display: inline-block;
+}
+
+.imglogo img{
+    height: 100px;
+    width: 100px;
+    display: inline-flex;
+    border-radius: 50%;
+}
+
+#h1 {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: rgb(191, 143, 23);
+}
+
+.container{
+    margin: auto;
+    max-width: 1100;
+    overflow: hidden;
+}
+
+#fotocama{
+    background: url(../images/Hall1.jpg) center no-repeat;
+    background-size: cover;
+    height: 350px;
+    align-self: center;
+}
+
+.titulo{
+    font-size: 40px;
+    text-align: center;
+}
+
+.sopa{
+    color: rgba(226, 109, 7, 0.868);
+}
+
+.colortexto{
+    color: rgb(249, 249, 249);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 4% ;
+    align-content: center;
+}
+
+section article #eslogan{
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(153, 130, 100);
+    padding: 10% 15% 15;
+}
+
+article #eslogan{
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+#eslogan{
+    font-size: 45px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    color: rgba(9, 3, 0, 0.887);
+    overflow: hidden;
+}
+
+#comedor{
+    background: url(../images/Comedor.jpg) center;
+    min-height: 24%;
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.fruta{
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.fruta div h3{
+    font-size: 20px;
+    color: rgb(230, 191, 141);
+}
+
+.divaside {
+    width: 100%;
+    height: 500px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    flex-wrap: wrap;
+    text-align: center;
+    overflow: hidden;
+    padding: 70px 30px;
+    margin-left: 45px;
+    justify-content: space-around;
+}
+
+aside div:hover{
+    transform: scale(1.1);
+    font-size: 17px;
+    justify-content: center;
+} 
+
+aside #gastronomia{
+    background: url(../images/Comida.jpg) center;
+    background-size: cover ;
+    width: 405px;
+}
+
+aside #piscina{
+    background: url(../images/Piscina.jpg) center;
+    background-size: cover;
+    width: 405px;
+}
+
+aside #gimnasio{
+    background: url(../images/Gym.jpg) center;
+    background-size: cover;
+    width: 405px;
+}

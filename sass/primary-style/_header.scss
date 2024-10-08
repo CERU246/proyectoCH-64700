@@ -1,0 +1,28 @@
+/* BARRA DE NAVEGACIÓN */
+
+.navbar{
+    background: black;
+}
+
+.navbar ul{
+    list-style-type: none;
+}
+
+.navbar li{ 
+    float: left;
+}
+
+.navbar ul li a{ 
+    color: white;
+    text-decoration: none;
+    padding: 70px;
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+}    
+    
+.navbar li a:hover, 
+.navbar li a.current {
+    color: black;
+    background: white;
+}

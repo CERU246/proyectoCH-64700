@@ -1,0 +1,29 @@
+/*RESET CSS */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Asegurar que el cuerpo ocupe al menos el 100% de la altura */
+    margin: 0;
+    padding: 0;
+    display: inline-flexbox;
+    flex-direction: row;
+    background: #908c8c;
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(88, 90, 95);
+    font-family: Arial, sans-serif;
+    font-size: smaller;
+    color: black;
+}
+
+p{
+    padding: 10px 0 ;
+    font-size: medium;
+}
