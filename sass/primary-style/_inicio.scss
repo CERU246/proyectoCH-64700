@@ -1,31 +1,5 @@
 /* PRIMERA PESTAÑA */
 
-nav h1{
-    justify-content: center;
-    display: inline-block;
-}
-
-.imglogo img{
-    height: 100px;
-    width: 100px;
-    display: inline-flex;
-    border-radius: 50%;
-}
-
-#h1 {
-    padding: 20px;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
-    color: rgb(191, 143, 23);
-}
-
-.container{
-    margin: auto;
-    max-width: 1100;
-    overflow: hidden;
-}
-
 #fotocama{
     background: url(../images/Hall1.jpg) center no-repeat;
     background-size: cover;

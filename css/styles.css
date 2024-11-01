@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*IMPORT RESET*/
 /*RESET CSS */
+@import 'animate.css';
 * {
   padding: 0px;
   margin: 0px;
@@ -33,20 +34,53 @@ p {
 /* BARRA DE NAVEGACIÓN */
 .navbar {
   background: black;
+  display: flex;
+}
+
+.imglogo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.imglogo img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#h1 {
+  padding: 20px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  color: rgb(191, 143, 23);
+}
+
+.container {
+  max-width: 1100;
+  overflow: hidden;
 }
 
 .navbar ul {
+  display: flex;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar li {
-  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
 
 .navbar ul li a {
   color: white;
   text-decoration: none;
-  padding: 70px;
+  padding: 20px;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -58,6 +92,30 @@ p {
   background: white;
 }
 
+/* Media Query para Pantallas Pequeñas */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Oculta el menú por defecto */
+  }
+  /* Icono de menú */
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  /* Mostrar menú cuando se activa */
+  .navbar.show ul {
+    display: flex;
+  }
+}
 /*IMPORT FOOTER*/
 /* FOOTER */
 footer {
@@ -71,24 +129,20 @@ footer {
   align-items: center;
   width: 100%; /* Asegurar que el footer ocupe todo el ancho de la página */
 }
-
-.clr {
+footer .clr {
   clear: both;
 }
-
-footer a {
-  text-decoration: none;
-  color: aliceblue; /* Asegurar que los enlaces tengan el color deseado */
-}
-
-footer div {
+footer footer div {
   display: flex; /* Usar Flexbox para alinear iconos horizontalmente */
   gap: 10px; /* Añadir espacio entre los iconos */
 }
-
-footer #facebook,
-footer #instagram,
-footer #twitter {
+footer footer a {
+  text-decoration: none;
+  color: aliceblue; /* Asegurar que los enlaces tengan el color deseado */
+}
+footer footer #facebook,
+footer footer #instagram,
+footer footer #twitter {
   height: 40px;
   width: 40px;
   background-color: rgb(228, 223, 209); /* Esto es solo para mostrar el espacio del icono; deberías usar imágenes o iconos reales */
@@ -96,10 +150,9 @@ footer #twitter {
   display: inline-block;
   overflow: hidden;
 }
-
-footer #facebook:hover,
-footer #instagram:hover,
-footer #twitter:hover {
+footer footer #facebook:hover,
+footer footer #instagram:hover,
+footer footer #twitter:hover {
   height: 50px;
   width: 50px;
   background-color: rgba(240, 183, 79, 0.583);
@@ -107,32 +160,6 @@ footer #twitter:hover {
 
 /*IMPORT INICIO*/
 /* PRIMERA PESTAÑA */
-nav h1 {
-  justify-content: center;
-  display: inline-block;
-}
-
-.imglogo img {
-  height: 100px;
-  width: 100px;
-  display: inline-flex;
-  border-radius: 50%;
-}
-
-#h1 {
-  padding: 20px;
-  text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 40px;
-  color: rgb(191, 143, 23);
-}
-
-.container {
-  margin: auto;
-  max-width: 1100;
-  overflow: hidden;
-}
-
 #fotocama {
   background: url(../images/Hall1.jpg) center no-repeat;
   background-size: cover;
@@ -239,7 +266,7 @@ aside #gimnasio {
 
 /*IMPORT HABITACIONES*/
 /* Habitaciones */
-#mainh {
+animate__lightSpeedInLeft animate__lightSpeedInRight #mainh {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Distribuye las cards en columnas automáticas */
   grid-gap: 1rem; /* Espacio entre las cards */
@@ -255,21 +282,16 @@ aside #gimnasio {
   padding: 15px; /* Espacio interno en las tarjetas */
 }
 
-#videoh {
-  grid-area: video;
-  width: 100%;
-}
-
-.asiderooms {
-  grid-area: aside;
-}
-
 #idh {
   display: grid;
   grid-template-columns: 2fr 1fr; /* Ajustar las columnas para un layout balanceado */
   grid-template-areas: "main aside" "main aside";
   grid-gap: 20px; /* Añade espacio entre las secciones */
   background: #c0b1a1;
+}
+
+.asiderooms {
+  grid-area: aside;
 }
 
 .card:hover {
@@ -301,7 +323,7 @@ aside #gimnasio {
   width: 80%;
   background: #e07d43;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5%;
+  border-radius: 3%;
 }
 
 #rangeValue {
@@ -310,7 +332,7 @@ aside #gimnasio {
   width: 80px;
   font-size: 1.2em;
   color: #fff;
-  background-color: #3814c7;
+  background-color: #5e3ee0;
   margin-left: 10px;
   border-radius: 20px;
 }

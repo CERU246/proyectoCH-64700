@@ -1,28 +1,89 @@
 /* BARRA DE NAVEGACIÓN */
 
-.navbar{
+.navbar {  
     background: black;
+    display: flex;
 }
 
-.navbar ul{
-    list-style-type: none;
+.imglogo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
-.navbar li{ 
-    float: left;
+.imglogo img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
-.navbar ul li a{ 
+#h1 {
+    padding: 20px;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(191, 143, 23);
+}
+
+.container{
+    max-width: 1100;
+    overflow: hidden;
+}
+
+.navbar ul {  
+    display: flex;  
+    list-style-type: none;  
+    padding: 0;  
+    margin: 0;  
+}  
+
+.navbar li {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}  
+
+.navbar ul li a {  
     color: white;
     text-decoration: none;
-    padding: 70px;
+    padding: 20px;
     display: flex;
     text-align: center;
-    justify-content: center; 
-}    
-    
-.navbar li a:hover, 
-.navbar li a.current {
-    color: black;
-    background: white;
+    justify-content: center;
+}  
+
+.navbar li a:hover,   
+.navbar li a.current {  
+    color: black;  
+    background: white;  
+}
+
+/* Media Query para Pantallas Pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Oculta el menú por defecto */
+    }
+
+    /* Icono de menú */
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    /* Mostrar menú cuando se activa */
+    .navbar.show ul {
+        display: flex;
+    }
 }
